@@ -45,7 +45,8 @@ public class QuoteListener implements QuoteInformerObserver
         timer.schedule( task, INFORMER_CONNECT_RETRY_INTERVAL );
     }
 
-    public void onQuotationInformerConnectionOpen( ServerHandshake serverHandshake )
+    public void onQuotationInformerConnectionOpen
+            ( ServerHandshake serverHandshake )
     {
         Log.write( "QuoteInformerClient connection OK" );
     }
